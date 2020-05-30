@@ -1,0 +1,22 @@
+.timePicker {
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: rgba(127, 127, 127, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+.hour {
+  flex: 1;
+  padding: 2px;
+}
+.minute {
+  flex: 1;
+  padding: 2px;
+}
+.label {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 2px 8px;
+}

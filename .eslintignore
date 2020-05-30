@@ -1,0 +1,8 @@
+build/
+dist/
+node_modules/
+.snapshots/
+example/node_modules/
+*.min.js
+**/dist/*
+**/node_modules/*

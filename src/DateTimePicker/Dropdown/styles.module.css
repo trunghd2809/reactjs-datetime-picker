@@ -1,0 +1,106 @@
+.dropDown {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+.open > .body > .displayWrapper > .menu {
+  top: 90%;
+  opacity: 1;
+  visibility: visible;
+  border: 1px solid #85b7d9;
+  border-top: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.open .display > input {
+  border-color: #85b7d9;
+}
+
+.displayWrapper {
+  flex: 1;
+  position: relative;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.display > input {
+  margin: 0;
+  max-width: 100%;
+  text-align: left;
+  line-height: 1.21428571em;
+  padding:.67857143em 1em;
+  background:#fff;
+  border:1px solid rgba(34,36,38,.15);
+  color:rgba(0,0,0,.87);
+  border-radius:.28571429rem;
+  -webkit-transition: border-color .1s ease,-webkit-box-shadow .1s ease;
+  transition:border-color .1s ease,-webkit-box-shadow .1s ease;
+  transition:box-shadow .1s ease,border-color .1s ease;
+  transition:box-shadow .1s ease,border-color .1s ease,-webkit-box-shadow .1s ease;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  outline: none;
+}
+
+.display > input:focus {
+  border: 1px solid #85b7d9; 
+}
+
+.menu {
+  max-width: 100%;
+  width: 98%;
+  visibility: visible;
+  opacity: 0;
+  border-radius: 0.2rem;
+  background-color: #fffefe;
+  box-shadow: none;
+  transform: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  position: absolute;
+}
+
+.menu ul {
+  top: 0;
+  overflow-y: auto;
+  padding: 0 1.0rem;
+  max-height: 100px;
+  list-style: none;
+  width: 100%;
+}
+
+.menu > ul > li {
+  border-top: 1px solid #fafafa;
+  outline: none;
+}
+
+.menu > ul > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  color: rgba(0,0,0,.87);
+  padding: .78571429rem 1.14285714rem!important;
+  text-transform: none;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu > ul > li > a:hover {
+  background-color: rgba(0,0,0,.03)
+}

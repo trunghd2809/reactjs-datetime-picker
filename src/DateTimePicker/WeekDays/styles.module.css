@@ -1,0 +1,19 @@
+.week {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: rgba(127, 127, 127, 0.1);
+}
+.weekDay {
+  flex-grow: 1;
+  width: 36px;
+  line-height: 36px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 36px;
+  position: relative;
+  font-weight: bold;
+  font-size: 11px;
+}

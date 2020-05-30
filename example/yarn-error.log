@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/local/Cellar/node/12.12.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/hoangtrung/.npm/_npx/1144/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/hoangtrung/Library/Android/sdk/emulator:/Users/hoangtrung/Library/Android/sdk/tools:/Users/hoangtrung/Library/Android/sdk/tools/bin:/Users/hoangtrung/Library/Android/sdk/platform-tools:/usr/local/Cellar/mysql/8.0.19/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat '/Users/hoangtrung/Workspace/reactjs/reactjs-datetime-picker/node_modules/react-scripts/node_modules/@babel/plugin-syntax-object-rest-spread'
+
+npm manifest: 
+  {
+    "name": "reactjs-datetime-picker-example",
+    "homepage": "https://trunghd2809.github.io/reactjs-datetime-picker",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+      "react": "link:../node_modules/react",
+      "react-dom": "link:../node_modules/react-dom",
+      "react-scripts": "link:../node_modules/react-scripts",
+      "reactjs-datetime-picker": "link:.."
+    },
+    "scripts": {
+      "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
+      "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+      "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+      "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
