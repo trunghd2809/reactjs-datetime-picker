@@ -41,6 +41,9 @@ const DropDown = (props) => {
   )
 }
 
-DropDown.propTypes = {}
+DropDown.propTypes = {
+  options: PropTypes.array,
+  onChange: PropTypes.func
+}
 
 export default React.memo(DropDown)

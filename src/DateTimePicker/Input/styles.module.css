@@ -35,7 +35,7 @@
 }
 
 .PopUpWrapper {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   right :0;
@@ -82,4 +82,7 @@
 }
 .PopUpWrapper input {
   font-size: 11px;
+}
+.open {
+  display: block;
 }

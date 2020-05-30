@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
+import cx from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import DatePicker from '../DatePicker'
@@ -16,18 +17,38 @@ const format = (date, timePicker) => {
     : `${month}/${day}/${year}`
 }
 const Input = (props) => {
+  const inputEl = useRef(null)
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    document.addEventListener('click', _onDocumentClick)
+    return () => {
+      document.removeEventListener('click', _onDocumentClick)
+    }
+  }, [open])
+  const _onDocumentClick = (e) => {
+    if (open && !inputEl.current.contains(e.target)) {
+      setOpen(false)
+    }
+  }
   const { placeholder, value, timePicker } = props
   const onChange = (date) => {
     if (typeof props.onChange === 'function') props.onChange(date)
   }
   const label = timePicker ? format(value, true) : format(value, false)
+  const popupClass = cx(styles.PopUpWrapper, {
+    [styles.open]: open
+  })
   return (
-    <div className={styles.InputWrapper}>
+    <div
+      className={styles.InputWrapper}
+      onClick={() => setOpen(true)}
+      ref={inputEl}
+    >
       <input placeholder={placeholder} value={label} readOnly />
       <div className={styles.svgWrapper}>
         <FontAwesomeIcon icon={faCalendar} />
       </div>
-      <div className={styles.PopUpWrapper}>
+      <div className={popupClass}>
         <DatePicker value={value} onSelect={onChange} timePicker={timePicker} />
       </div>
     </div>
