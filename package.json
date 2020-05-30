@@ -1,6 +1,6 @@
 {
   "name": "datetime-picker-reactjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React js DateTime Picker",
   "author": "trunghd2809",
   "license": "MIT",
@@ -55,5 +55,15 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "classnames": "^2.2.6"
-  }
+  },
+  "keywords": [
+    "datetime",
+    "picker",
+    "date picker",
+    "datetime picker",
+    "Datetime picker",
+    "DateTime",
+    "Reactjs Datetime picker",
+    "Reactjs Date picker"
+  ]
 }

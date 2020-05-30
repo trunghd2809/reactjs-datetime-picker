@@ -9,7 +9,7 @@
 ## Install
 
 ```bash
-npm install --save reactjs-datetime-picker
+npm i datetime-picker-reactjs
 ```
 
 ## Usage
@@ -17,12 +17,12 @@ npm install --save reactjs-datetime-picker
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'reactjs-datetime-picker'
-import 'reactjs-datetime-picker/dist/index.css'
+import { DateTimePicker } from 'datetime-picker-reactjs'
+import 'datetime-picker-reactjs/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <DateTimePicker value={new Date()}/>
   }
 }
 ```
