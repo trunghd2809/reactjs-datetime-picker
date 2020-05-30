@@ -1,4 +1,6 @@
 # reactjs-datetime-picker
+  A simple and reusable Datepicker component for React
+  <img width="396" alt="Screen Shot 2020-05-30 at 16 02 41" src="https://user-images.githubusercontent.com/38755997/83325314-a4630100-a295-11ea-8710-66e93a6e91f4.png">
 
 > React js DateTime Picker
 
